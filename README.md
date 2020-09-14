@@ -8,7 +8,7 @@ Soon will be available a newer version for Python 3.x.
 
 ## Before using the application
 
-Before you can use the application, you must have installed de requirement packages listed on ‘Requirements.txt’.
+Before you can use the application, you must have installed the requirement packages listed on ‘Requirements.txt’.
 You can install them with pip, by the command `pip install -r requirements.txt`.
 
 
