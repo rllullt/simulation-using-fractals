@@ -91,8 +91,8 @@ Para dibujar el suelo, se itera por cada punto en `puntosBorde`, dibujándose po
 De esta manera, se dibuja el contorno y al mismo tiempo se «pinta» por dentro.
 
 <div align="center">
-  <img src="Imágenes/Diagrama dibujo cordillera.png" height="200" alt="Diagrama de dibujo de la cordillera">
-  <img src="Imágenes/400px-Riemann_Integration_4.png" height="260" alt="Integral de Riemann">
+  <img src="Imágenes/Diagrama dibujo cordillera.png" height="270" alt="Diagrama de dibujo de la cordillera">
+  <img src="Imágenes/400px-Riemann_Integration_4.png" height="240" alt="Integral de Riemann">
 </div>
 
 ### Árbol
