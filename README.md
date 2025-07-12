@@ -65,6 +65,10 @@ Esto se puede hacer mediante el comando `python main.py`.
 Cada modelo fue implementado en una clase de su mismo nombre, con un constructor y por lo menos el método `dibujar`, encargado de dibujar el objeto por cada ciclo.
 En el controlador, los modelos se dibujaban en un orden específico para garantizar la correcta superposición en la escena: primero el fondo, después la cordillera, luego los árboles y finalmente las nubes. Cuando se generaban rayos, estos se dibujaban después de los árboles y antes de las nubes, para simular «ser lanzados» desde ellas.
 
+<div align="center">
+  <img src="Imágenes/Paisaje general con rayo.png" height="300" alt="Paisaje general con rayo">
+</div>
+
 ### Cordillera
 
 A partir del ancho y alto de la ventana de la escena, y la altura del suelo, el factor de rugosidad, el espaciado de la malla a dibujar y el ancho de la cordillera, se genera el arrelo `puntosBorde`, que delimita los puntos de borde del suelo, con puntos equiespaciados. Cada índice $i$ del arreglo corresponde a la coordenada $x$ del punto, mientras que el valor $\text{puntosBorde}_i$ corresponde a la altura del suelo en ese punto.
@@ -87,9 +91,41 @@ Para dibujar el suelo, se itera por cada punto en `puntosBorde`, dibujándose po
 De esta manera, se dibuja el contorno y al mismo tiempo se «pinta» por dentro.
 
 <div align="center">
-  <img src="Imágenes/Diagrama dibujo cordillera.png" height="300" alt="Diagrama de dibujo de la cordillera">
-  <img src="Imágenes/400px-Riemann_Integration_4.png" height="300" alt="Integral de Riemann">
+  <img src="Imágenes/Diagrama dibujo cordillera.png" height="200" alt="Diagrama de dibujo de la cordillera">
+  <img src="Imágenes/400px-Riemann_Integration_4.png" height="260" alt="Integral de Riemann">
 </div>
 
 ### Árbol
 
+<div align="center">
+  <img src="Imágenes/Árbol Pitágoras fractal orden 6.png" height="100" alt="Paisaje general con rayo">
+</div>
+
+#### Dibujar
+
+<div align="center">
+  <img src="Imágenes/Diagrama dibujo árbol fractal.png" height="200" alt="Diagrama de las formas, traslaciones y toratciones que hizo Árvalorayo">
+</div>
+
+
+### Rayo
+
+<div align="center">
+  <img src="Imágenes/Rayo paseo aleatorio punto medio.png" width="60" alt="Rayo golpeando un árbol">
+</div>
+
+
+### Nube
+
+<div align="center">
+  <img src="Imágenes/Diagrama dibujo cordillera.png" height="100" alt="Diagrama de dibujo de la cordillera">
+  <img src="Imágenes/400px-Riemann_Integration_4.png" height="160" alt="Integral de Riemann">
+</div>
+
+
+### Fondos
+
+<div align="center">
+  <img src="Imágenes/Diagrama dibujo árbol fractal.png" height="200" alt="Diagrama de las formas, traslaciones y toratciones que hizo Árvalorayo">
+</div>
+Es in dueñoel CEO para este proyectp.
