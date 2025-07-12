@@ -59,3 +59,37 @@ Esto se puede hacer mediante el comando `python main.py`.
 - M: Lanzar muchos rayos
 - Q: Salir del programa
 
+
+## Modelos
+
+Cada modelo fue implementado en una clase de su mismo nombre, con un constructor y por lo menos el método `dibujar`, encargado de dibujar el objeto por cada ciclo.
+En el controlador, los modelos se dibujaban en un orden específico para garantizar la correcta superposición en la escena: primero el fondo, después la cordillera, luego los árboles y finalmente las nubes. Cuando se generaban rayos, estos se dibujaban después de los árboles y antes de las nubes, para simular «ser lanzados» desde ellas.
+
+### Cordillera
+
+A partir del ancho y alto de la ventana de la escena, y la altura del suelo, el factor de rugosidad, el espaciado de la malla a dibujar y el ancho de la cordillera, se genera el arrelo `puntosBorde`, que delimita los puntos de borde del suelo, con puntos equiespaciados. Cada índice $i$ del arreglo corresponde a la coordenada $x$ del punto, mientras que el valor $\text{puntosBorde}_i$ corresponde a la altura del suelo en ese punto.
+
+Dados $h$ la altura del suelo, $dh$ el espaciado de la malla en pixeles, $m$ la altura generada para controlar la altura de la cordillera y $a$ las alturas aleatorias calculadas por el paseo aleatorio, cada punto $(x, y)$ se define según:
+$$ (x, y)_i := (dh\cdot i, puntosBorde_i) $$
+
+#### Paseo aleatorio
+
+Se trabaja en el arreglo con una especie de quicksort, tomando dos puntos $x_i$ y $x_j$ para calcular la altura $y$ del punto medio entre ellos.
+Es decir, se calcula $(x_m, y_m)$, siendo $m=(i+j)/2$, de la siguiente manera:
+$$ (x_m, y_m) := (x_m, (y_i + y_j) / + r) $$
+donde r es un coeficiente aleatoriamente obtenido para generar el fractal, mediante la fórmula
+$$ r = s\cdot \text{random.gauss}(0, 1)\cdot \text{abs}(j - i) $$
+donde $s$ es el factor de rugosidad de la superficie. De aquí se desprende que a mayor $s$, más rugosa es la superficie.
+
+#### Dibujar
+
+Para dibujar el suelo, se itera por cada punto en `puntosBorde`, dibujándose polígonos de 4 lados con `GL_POLYGON`, de forma similar a la Integral de Riemann.
+De esta manera, se dibuja el contorno y al mismo tiempo se «pinta» por dentro.
+
+<div align="center">
+  <img src="Imágenes/Diagrama dibujo cordillera.png" height="300" alt="Diagrama de dibujo de la cordillera">
+  <img src="Imágenes/400px-Riemann_Integration_4.png" height="300" alt="Integral de Riemann">
+</div>
+
+### Árbol
+
