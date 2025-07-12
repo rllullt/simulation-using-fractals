@@ -74,15 +74,15 @@ En el controlador, los modelos se dibujaban en un orden específico para garanti
 A partir del ancho y alto de la ventana de la escena, y la altura del suelo, el factor de rugosidad, el espaciado de la malla a dibujar y el ancho de la cordillera, se genera el arrelo `puntosBorde`, que delimita los puntos de borde del suelo, con puntos equiespaciados. Cada índice $i$ del arreglo corresponde a la coordenada $x$ del punto, mientras que el valor $\text{puntosBorde}_i$ corresponde a la altura del suelo en ese punto.
 
 Dados $h$ la altura del suelo, $dh$ el espaciado de la malla en pixeles, $m$ la altura generada para controlar la altura de la cordillera y $a$ las alturas aleatorias calculadas por el paseo aleatorio, cada punto $(x, y)$ se define según:
-$$ (x, y)_i := (dh\cdot i, puntosBorde_i) $$
+$$(x, y)_i := (dh\cdot i, puntosBorde_i)$$
 
 #### Paseo aleatorio
 
 Se trabaja en el arreglo con una especie de quicksort, tomando dos puntos $x_i$ y $x_j$ para calcular la altura $y$ del punto medio entre ellos.
 Es decir, se calcula $(x_m, y_m)$, siendo $m=(i+j)/2$, de la siguiente manera:
-$$ (x_m, y_m) := (x_m, (y_i + y_j) / + r) $$
+$$(x_m, y_m) := (x_m, (y_i + y_j) / + r)$$
 donde r es un coeficiente aleatoriamente obtenido para generar el fractal, mediante la fórmula
-$$ r = s\cdot \text{random.gauss}(0, 1)\cdot \text{abs}(j - i) $$
+$$r = s\cdot \text{random.gauss}(0, 1)\cdot \text{abs}(j - i)$$
 donde $s$ es el factor de rugosidad de la superficie. De aquí se desprende que a mayor $s$, más rugosa es la superficie.
 
 #### Dibujar
