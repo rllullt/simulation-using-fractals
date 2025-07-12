@@ -3,7 +3,7 @@
 This is a simulation-game made with Python 2.7 in “Modelation and Graphic Computation” course.
 Follows the methodology of Model View Controller.
 
-Soon will be available a newer version for Python 3.x.
+Some time a newer version for Python 3.x will be available.
 
 
 ## Before using the application
@@ -31,7 +31,13 @@ This can be done by the command `python main.py`.
 Esta es una simulación juego realizada en Python 2.7 durante el curso «Modelación y computación gráfica».
 Sigue la metodología Modelo Vista Controlador.
 
-Pronto se tendrá una versión más actualizada para Python 3.x.
+En algún momento se tendrá una versión más actualizada para Python 3.x.
+
+Se simula una tempestad donde se modela el paisaje (montañas, lagos, nubes y árboles) y los rayos usando fractales.
+
+<div align="center">
+  <img src="Imágenes/Jugabilidad_3fps.gif" height="300" alt="Gamplay experience">
+</div>
 
 
 ## Antes de utilizar la aplicación
