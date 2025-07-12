@@ -97,14 +97,11 @@ De esta manera, se dibuja el contorno y al mismo tiempo se «pinta» por dentro.
 
 ### Árbol
 
-<div align="center">
-  <img src="Imágenes/Árbol Pitágoras fractal orden 6.png" height="100" alt="Paisaje general con rayo">
-</div>
-
 #### Dibujar
 
 <div align="center">
-  <img src="Imágenes/Diagrama dibujo árbol fractal.png" height="200" alt="Diagrama de las formas, traslaciones y toratciones que hizo Árvalorayo">
+  <img src="Imágenes/Diagrama dibujo árbol fractal.png" height="200" alt="Diagrama de las formas, traslaciones y rotaciones para agregar un árbol al mapa.">
+  <img src="Imágenes/Arbol Pitágoras fractal orden 6.png" height="100" alt="Paisaje general con rayo">
 </div>
 
 
@@ -118,14 +115,14 @@ De esta manera, se dibuja el contorno y al mismo tiempo se «pinta» por dentro.
 ### Nube
 
 <div align="center">
-  <img src="Imágenes/Diagrama dibujo cordillera.png" height="100" alt="Diagrama de dibujo de la cordillera">
-  <img src="Imágenes/400px-Riemann_Integration_4.png" height="160" alt="Integral de Riemann">
+  <img src="Imágenes/Diagrama dibujo nube.png" height="200" alt="Diagrama dibujo nube">
+  <img src="Imágenes/Nube fractal.png" height="120" alt="Diagrama de dibujo de la cordillera">
 </div>
 
 
-### Fondos
+### Fondo
 
 <div align="center">
-  <img src="Imágenes/Diagrama dibujo árbol fractal.png" height="200" alt="Diagrama de las formas, traslaciones y toratciones que hizo Árvalorayo">
+  <img src="Imágenes/Fondo.png" height="200" alt="Fondo">
 </div>
-Es in dueñoel CEO para este proyectp.
+
