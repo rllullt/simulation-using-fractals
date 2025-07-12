@@ -98,13 +98,13 @@ De esta manera, se dibuja el contorno y al mismo tiempo se «pinta» por dentro.
 ### Árbol
 
 <div align="center">
-  <img src="Imágenes/Arbol Pitágoras fractal orden 6.png" height="100" alt="Paisaje general con rayo">
+  <img src="Imágenes/Arbol Pitágoras fractal orden 6.png" height="180" alt="Paisaje general con rayo">
 </div>
 
 #### Dibujar
 
 <div align="center">
-  <img src="Imágenes/Diagrama dibujo árbol fractal.png" height="120" alt="Diagrama de las formas, traslaciones y rotaciones para agregar un árbol al mapa.">
+  <img src="Imágenes/Diagrama dibujo árbol fractal.png" height="150" alt="Diagrama de las formas, traslaciones y rotaciones para agregar un árbol al mapa.">
 </div>
 
 
@@ -118,7 +118,7 @@ De esta manera, se dibuja el contorno y al mismo tiempo se «pinta» por dentro.
 ### Nube
 
 <div align="center">
-  <img src="Imágenes/Nube fractal.png" height="120" alt="Nube">
+  <img src="Imágenes/Nube fractal.png" height="130" alt="Nube">
 </div>
 
 #### Dibujar
